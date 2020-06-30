@@ -1,12 +1,26 @@
 import React from 'react';
 import './App.css';
+import Home from './components/Home'
+import Projects from './components/Projects'
+
+import { BrowserRouter as Router, Route, NavLink, Redirect } from 'react-router-dom';
+import { Navbar } from 'react-bootstrap';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p className="My-name">Bradley Wong</p>
-        <p>Front End Web Developer</p>
+    <div>
+      <header>
+        <Router>
+          <Navbar bg="light" variant="light" expand="lg">
+            <NavLink to="/home" activeClassName="selected">Home</NavLink>
+            <NavLink to="/projects" activeClassName="selected">Projects</NavLink>
+            <NavLink to="/docs/resume.pdf" target="_blank" download>Resume</NavLink>
+            <a href="mailto:bradleywong.work@gmail.com?Subject=Hi Bradley">Email</a>
+          </Navbar>
+          <Route path='/' exact component={Home} />
+          <Route path='/home' render={()=> <Redirect to='/' />} />
+          <Route path='/projects' component={Projects} />
+        </Router>
       </header>
     </div>
   );
