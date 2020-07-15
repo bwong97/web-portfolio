@@ -37,3 +37,11 @@
 .selected {
   font-weight: bold;
 }
+
+.job-section {
+  width: 60vw;
+}
+
+.job-header {
+  text-align: center;
+}
