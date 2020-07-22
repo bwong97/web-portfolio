@@ -12,6 +12,7 @@ intent of improving their workflow of modifying their menus across their restaur
 application using the Flask framework in Python, and practiced Agile methodologies in addition to a
 Trello board. By the end of the semester we had a working baseline model that would demonstrate the
 main functions that they would normally perform using a spreadsheet but more streamlined.</p>
+      <br/>
     </div>
   )
 }

@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  background-image: url("./cover-img.jpg");
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .App-logo {
@@ -7,14 +10,26 @@
   pointer-events: none;
 }
 
+.Nav-style {
+  font-size: 1.5rem;
+}
+
 .App-header {
-  background-color: #282c34;
+  /* background-color: #282c34; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   /* justify-content: center; */
   color: white;
+}
+
+.App-footer {
+  /* background-color: #282c34; */
+  text-align: center;
+  align-items: center;
+  color: white;
+  background-color: rgba(0,0,0,0.55);
 }
 
 .App-link {
@@ -40,6 +55,9 @@
 
 .job-section {
   width: 60vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  background-color: rgba(0,0,0,0.55);
 }
 
 .job-header {

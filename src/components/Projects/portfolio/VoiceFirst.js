@@ -9,6 +9,7 @@ function VoiceFirst() {
 Voice First Health. The application was developed in JavaScript that was deployed to AWS Lambda,
 which ran the code when the Alexa skill is invoked. We used Agile methodologies for development, and
 kept track of progress using a JIRA board.</p>
+      <br/>
     </div>
   )
 }

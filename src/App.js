@@ -8,23 +8,27 @@ import { Navbar } from 'react-bootstrap';
 
 import Pdf from './docs/resume.pdf';
 
-
 function App() {
+  let d = new Date()
+  let currentYear = d.getFullYear()
   return (
-    <div>
+    <div className="App">
       <header>
         <Router>
-          <Navbar bg="light" variant="light" expand="lg">
-            <NavLink to="/home" activeClassName="selected">Home</NavLink>
-            <NavLink to="/projects" activeClassName="selected">Projects</NavLink>
-            <NavLink to={Pdf} target="_blank" download>Resume</NavLink>
-            <a href="mailto:bradleywong.work@gmail.com?Subject=Hi Bradley">Email</a>
+          <Navbar bg="dark" variant="light" expand="lg">
+            <NavLink to="/home" className="Nav-style" activeClassName="selected">Home</NavLink>
+            <NavLink to="/projects" className="Nav-style" activeClassName="selected">Projects</NavLink>
+            <NavLink to={Pdf} target="_blank" download className="Nav-style">Resume</NavLink>
+            <a className="Nav-style" href="mailto:bradleywong.work@gmail.com?Subject=Hi Bradley">Email</a>
           </Navbar>
           <Route path='/' exact component={Home} />
           <Route path='/home' render={()=> <Redirect to='/' />} />
           <Route path='/projects' component={Projects} />
         </Router>
       </header>
+      <footer className="App-footer">
+        <small>&copy; Copyright {currentYear}, bradleywong.xyz</small>
+      </footer>
     </div>
   );
 }

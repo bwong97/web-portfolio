@@ -8,6 +8,7 @@ function SoundQA() {
       <p>[May 2019 - Aug 2019] Worked on a front end web application that displays the data recorded on the company’s backend.
 Integrated JWT from the backend to authorize users for the application, and return different data
 depending on which client company was using the app.</p>
+      <br/>
     </div>
   )
 }

@@ -8,9 +8,16 @@ function Projects() {
     <div className="App-header">
       <h1>&nbsp;</h1>
       <h1 className="My-name">Projects</h1>
+      <br/>
       <EarlsKitchen />
+      <br/>
       <SoundQA />
+      <br/>
       <VoiceFirst />
+      <br/>
+      <br/>
+      <br/>
+      <br/>
     </div>
   )
 }
