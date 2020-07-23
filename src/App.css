@@ -1,8 +1,13 @@
 .App {
   text-align: center;
   background-image: url("./cover-img.jpg");
+  height: 95%;
   background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
+  margin: auto;
+  display: block;
 }
 
 .App-logo {
@@ -62,4 +67,27 @@
 
 .job-header {
   text-align: center;
+}
+
+.home-top {
+  display: block;
+  height: 100vh;
+  margin: auto;
+  margin-top: 5vh;
+  color: rgb(51,51,51);
+}
+
+.home-about {
+  background-color: white;
+  /* width: 95vw; */
+  width: 60vw;
+  color: rgb(51,51,51);
+  padding: 50px 0;
+  margin-bottom: 30px;
+}
+
+.about-blurb {
+  font-size: 26px;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
