@@ -10,7 +10,6 @@ function Home() {
       <div className="home-top">
         <h1 className="My-name">Bradley Wong</h1>
         <h2>Front End Web Developer</h2>
-        <p>Diploma Graduate from BCIT 2020 in Computer Information Technology</p>
       </div>
       <section className="home-about">
         <h1>TL;DR</h1>
